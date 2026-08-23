@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="ZD CLOTHES - متجر ملابس شبابي بتصميم عصري. اكتشف أحدث الملابس والمنتجات واطلب بسهولة عبر WhatsApp.">
+
+    <title>ZD CLOTHES | Fashion Store</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ================= LOADER ================= -->
+
+<div class="loader" id="loader">
+
+    <div class="loader-logo">
+        <span>ZD</span>
+    </div>
+
+    <div class="loader-line">
+        <span></span>
+    </div>
+
+    <p>ZD CLOTHES</p>
+
+</div>
+
+
+<!-- ================= BACKGROUND ================= -->
+
+<div class="background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar-custom">
+
+    <div class="logo-area">
+       <div class="logo">
+        <img src="../zd-clothes1/imges/Untitled Project - illustrationImage.png" width="100px" height="100px">
+       </div>
+    </div>
+
+
+    <nav id="nav">
+
+        <a href="#home">الرئيسية</a>
+
+        <a href="#products">المنتجات</a>
+
+        <a href="#about">عن ZD</a>
+
+        <a href="#contact">تواصل معنا</a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+        <button
+            class="cart-btn"
+            onclick="openCart()">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span id="cartCount">0</span>
+
+        </button>
+
+
+        <button
+            class="menu-btn"
+            onclick="toggleMenu()">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-tag">
+
+            <span></span>
+
+            ZD CLOTHES
+
+        </div>
+
+
+        <h1>
+
+            WEAR
+            <strong>YOUR STYLE</strong>
+
+        </h1>
+
+
+        <p>
+
+            اكتشف أحدث تصميمات الملابس الشبابية
+            بجودة عالية وشكل عصري يناسب ستايلك.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#products"
+                class="primary-btn">
+
+                تسوق الآن
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+            </a>
+
+
+            <a
+                href="https://wa.me/201037393529"
+                target="_blank"
+                rel="noopener"
+                class="whatsapp-btn">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                تواصل معنا
+
+            </a>
+
+        </div>
+
+
+        <div class="stats">
+
+            <div>
+                <strong>10+</strong>
+                <span>منتجات</span>
+            </div>
+
+            <div>
+                <strong>100%</strong>
+                <span>جودة</span>
+            </div>
+
+            <div>
+                <strong>24/7</strong>
+                <span>دعم</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- HERO PRODUCT -->
+
+    <div class="hero-product">
+
+        <div class="hero-circle"></div>
+
+        <div class="hero-floating-text">
+            ZD
+        </div>
+
+
+        <div class="hero-shirt-card">
+
+            <div class="hero-shirt">
+                <span>ZD</span>
+            </div>
+
+
+            <div class="hero-product-info">
+
+                <small>NEW COLLECTION</small>
+
+                <h3>ZD Premium</h3>
+
+                <strong>STYLE</strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MARQUEE ================= -->
+
+<div class="marquee">
+
+    <div class="marquee-track">
+
+        <span>ZD CLOTHES</span>
+        <i class="fa-solid fa-star"></i>
+
+        <span>NEW COLLECTION</span>
+        <i class="fa-solid fa-star"></i>
+
+        <span>PREMIUM STYLE</span>
+        <i class="fa-solid fa-star"></i>
+
+        <span>ZD CLOTHES</span>
+        <i class="fa-solid fa-star"></i>
+
+        <span>NEW COLLECTION</span>
+        <i class="fa-solid fa-star"></i>
+
+        <span>PREMIUM STYLE</span>
+
+    </div>
+
+</div>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products-section" id="products">
+
+    <div class="section-title">
+
+        <div>
+
+            <span>OUR COLLECTION</span>
+
+            <h2>
+                أحدث <b>المنتجات</b>
+            </h2>
+
+        </div>
+
+        <p>
+            اختار المنتج اللي يناسبك
+            وضيفه للسلة واطلبه بسهولة.
+        </p>
+
+    </div>
+
+
+    <!-- FILTER -->
+
+    <div class="filters">
+
+        <button class="filter active" data-filter="all">
+            الكل
+        </button>
+
+        <button class="filter" data-filter="tshirt">
+            T-Shirts
+        </button>
+
+        <button class="filter" data-filter="hooie">
+            Hoodies
+        </button>
+
+        
+    </div>
+
+
+    <!-- PRODUCTS -->
+
+    <div class="products-grid">
+
+
+        <!-- PRODUCT 1 -->
+
+        <div class="product" data-category="tshirt">
+
+            <div class="product-image">
+
+                <span class="badge hot">HOT</span>
+
+                <div class="product-photo">
+
+                    <img src="../zd-clothes1/imges/ChatGPT Image 23 أغسطس 2026، 07_54_19 ص.png" alt="ZD Black T-Shirt" class="product-img">
+
+                   
+
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <small>T-SHIRT</small>
+
+                <span>Out of Stock</span>
+
+                <div class="product-bottom">
+
+                    <strong>250 EGP</strong>
+
+                    <button oclick="addToCart('ZD Black T-Shirt',450)">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+
+        <div class="product" data-category="tshirt">
+
+            <div class="product-image">
+
+                <span class="badge">NEW</span>
+
+                <div class="product-photo">
+
+                    <img src="../zd-clothes1/imges/ChatGPT Image 23 أغسطس 2026، 07_54_31 ص.png" alt="ZD White T-Shirt" class="product-img">
+
+                    <span class="image-placeholder">
+                        PRODUCT 02
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <small>T-SHIRT</small>
+
+                <h3>EKRACHINA White T-Shirt</h3>
+
+                <div class="product-bottom">
+
+                    <strong>250 EGP</strong>
+
+                    <button onclick="addToCart('EKRACHINA White T-Shirt',250)">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+
+        <div class="product" data-category="tshirt">
+
+            <div class="product-image">
+
+                <span class="badge hot">TREND</span>
+
+                <div class="product-photo">
+
+                    <img src="../zd-clothes1/imges/جخ.PNG" alt="OCCASIONS light Brown T-Shirt" class="product-img">
+
+                    <span class="image-placeholder">
+                        PRODUCT 03
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <small>T-SHIRT</small>
+
+                <h3>OCCASIONS light Brown T-Shirt</h3>
+
+                <div class="product-bottom">
+
+                    <strong>250 EGP</strong>
+
+                    <button onclick="addToCart('OCCASIONS light Brown T-Shirt',250)">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 4 -->
+
+        <div class="product" data-category="tshirt">
+
+            <div class="product-image">
+
+                <span class="badge">NEW</span>
+
+                <div class="product-photo">
+
+                    <img src="../zd-clothes1/imges/خه.PNG" alt="Hi Black" class="product-img">
+
+                    <span class="image-placeholder">
+                        PRODUCT 04
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <small>T-SHIRT</small>
+
+                <h3>Hi Black </h3>
+
+                <div class="product-bottom">
+
+                    <strong>300 EGP</strong>
+
+                    <button onclick="addToCart('Hi Black',300)">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 5 -->
+
+        <div class="product" data-category="tshirt">
+
+            <div class="product-image">
+
+                <span class="badge hot">HOT</span>
+
+                <div class="product-photo">
+
+                    <img src="../zd-clothes1/imges/جه.PNG" alt="ZD Black Hoodie" class="product-img">
+
+                    <span class="image-placeholder">
+                        PRODUCT 05
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <small>T-SHIRT</small>
+
+                <h3>Hi Brown</h3>
+
+                <div class="product-bottom">
+
+                    <strong>300 EGP</strong>
+
+                    <button onclick="addToCart('Hi Brown',300)">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 6 -->
+
+        <div class="product" data-category="tshirt">
+
+            <div class="product-image">
+
+                <span class="badge">NEW</span>
+
+                <div class="product-photo">
+
+                    <img src="../zd-clothes1/imges/يقثشة.PNG" alt="Dream White" class="product-img">
+
+                    <span class="image-placeholder">
+                        PRODUCT 06
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <small>T-SHIRT</small>
+
+                <h3>Dream White </h3>
+
+                <div class="product-bottom">
+
+                    <strong>250 EGP</strong>
+
+                    <button onclick="addToCart('Dream White',250)">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+      
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-visual">
+
+        <div class="about-ring">
+            ZD CLOTHES • ZD CLOTHES •
+        </div>
+
+        <div class="about-circle">
+
+            <span>ZD</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <span>ABOUT ZD</span>
+
+        <h2>
+            WEAR
+            <b>CONFIDENCE.</b>
+        </h2>
+
+        <p>
+            ZD CLOTHES هو متجر ملابس شبابي
+            بيجمع بين التصميم العصري والجودة
+            والستايل المختلف.
+        </p>
+
+
+        <div class="features">
+
+            <div>
+                <i class="fa-solid fa-shirt"></i>
+                جودة عالية
+            </div>
+
+            <div>
+                <i class="fa-solid fa-bolt"></i>
+                ستايل عصري
+            </div>
+
+            <div>
+                <i class="fa-solid fa-truck"></i>
+                شحن سريع
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <span>READY?</span>
+
+    <h2>
+        FIND YOUR
+        <b>STYLE.</b>
+    </h2>
+
+    <button onclick="document.getElementById('products').scrollIntoView()">
+
+        ابدأ التسوق
+
+        <i class="fa-solid fa-arrow-left"></i>
+
+    </button>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <div class="section-title">
+
+        <div>
+
+            <span>CONTACT US</span>
+
+            <h2>
+                تواصل <b>معنا</b>
+            </h2>
+
+        </div>
+
+        <p>
+            اختار طريقة التواصل المناسبة ليك.
+        </p>
+
+    </div>
+
+
+    <div class="socials">
+
+        <!-- WHATSAPP -->
+
+        <a
+            href="https://wa.me/201037393529"
+            target="_blank"
+            rel="noopener"
+            class="social">
+
+            <div class="social-icon whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+
+            <div>
+
+                <small>WhatsApp</small>
+
+                <h3>01037393529</h3>
+
+            </div>
+
+            <i class="fa-solid fa-arrow-left arrow"></i>
+
+        </a>
+
+
+        <!-- INSTAGRAM -->
+
+        <a
+            href="https://www.instagram.com/zdclothes1/"
+            target="_blank"
+            rel="noopener"
+            class="social">
+
+            <div class="social-icon instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+            <div>
+
+                <small>Instagram</small>
+
+                <h3>@zdclothes1</h3>
+
+            </div>
+
+            <i class="fa-solid fa-arrow-left arrow"></i>
+
+        </a>
+
+
+        <!-- FACEBOOK -->
+
+        <a
+            href="https://www.facebook.com/groups/1836567144261883"
+            target="_blank"
+            rel="noopener"
+            class="social">
+
+            <div class="social-icon facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+
+            <div>
+
+                <small>Facebook</small>
+
+                <h3>ZD CLOTHES</h3>
+
+            </div>
+
+            <i class="fa-solid fa-arrow-left arrow"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        ZD
+    </div>
+
+    <h3>ZD CLOTHES</h3>
+
+    <p>
+        Your Style. Your Identity.
+    </p>
+
+
+    <div class="footer-socials">
+
+        <a href="https://wa.me/201037393529" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="https://www.instagram.com/zdclothes1/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/groups/1836567144261883" target="_blank" rel="noopener">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 ZD CLOTHES - All Rights Reserved
+    </div>
+
+</footer>
+
+
+<!-- ================= FLOATING WHATSAPP ================= -->
+
+<a
+    href="https://wa.me/201037393529"
+    target="_blank"
+    rel="noopener"
+    class="floating-whatsapp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+    <span>WhatsApp</span>
+
+</a>
+
+
+<!-- ================= CHATBOT ================= -->
+
+<div class="chatbot" id="chatbot">
+
+    <div class="chatbot-panel" id="chatbotPanel">
+
+        <div class="chatbot-header">
+
+            <div>
+
+                <strong>ZD CLOTHES</strong>
+
+                <small>متصل الآن 🟢</small>
+
+            </div>
+
+            <button onclick="toggleChatbot()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <div class="chatbot-body">
+
+            <div class="bot-message">
+
+                👋 أهلاً بيك في ZD CLOTHES
+
+                <br><br>
+
+                أنا مساعدك في الطلب والتواصل.
+
+                <br><br>
+
+                اختار من القائمة:
+
+            </div>
+
+
+            <button
+                class="chat-option"
+                onclick="openCart()">
+
+                🛒 عرض السلة
+
+            </button>
+
+
+            <button
+                class="chat-option"
+                onclick="openOrderForm()">
+
+                📦 عمل طلب
+
+            </button>
+
+
+            <a
+                href="https://wa.me/201037393529"
+                target="_blank"
+                rel="noopener"
+                class="chat-option">
+
+                💬 WhatsApp
+
+            </a>
+
+
+            <a
+                href="https://www.instagram.com/zdclothes1/"
+                target="_blank"
+                rel="noopener"
+                class="chat-option">
+
+                📸 Instagram
+
+            </a>
+
+
+            <a
+                href="https://www.facebook.com/groups/1836567144261883"
+                target="_blank"
+                rel="noopener"
+                class="chat-option">
+
+                🔵 Facebook
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <button
+        class="chatbot-button"
+        onclick="toggleChatbot()">
+
+        <i class="fa-solid fa-comments"></i>
+
+    </button>
+
+</div>
+
+
+<!-- ================= CART OVERLAY ================= -->
+
+<div
+    class="cart-overlay"
+    id="cartOverlay"
+    onclick="closeCart()">
+</div>
+
+
+<!-- ================= CART ================= -->
+
+<aside class="cart" id="cart">
+
+    <div class="cart-header">
+
+        <h2>
+            <i class="fa-solid fa-bag-shopping"></i>
+            السلة
+        </h2>
+
+        <button onclick="closeCart()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+
+    <div class="cart-items" id="cartItems"></div>
+
+
+    <div class="cart-footer">
+
+        <div class="total">
+
+            <span>الإجمالي</span>
+
+            <strong id="cartTotal">
+                0 EGP
+            </strong>
+
+        </div>
+
+
+        <button
+            class="checkout"
+            onclick="openOrderForm()">
+
+            <i class="fa-solid fa-box"></i>
+
+            إتمام الطلب
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= ORDER MODAL ================= -->
+
+<div class="order-overlay" id="orderModal">
+
+    <div class="order-box">
+
+        <button
+            class="order-close"
+            onclick="closeOrderForm()">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div id="orderFormContent">
+
+            <div class="order-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+
+
+            <div class="order-title">
+
+                <span>ZD CLOTHES</span>
+
+                <h2>بيانات الطلب</h2>
+
+                <p>
+                    اكتب بياناتك عشان نقدر نتواصل معاك.
+                </p>
+
+            </div>
+
+
+            <form id="orderForm">
+
+                <!-- NAME -->
+
+                <div class="input-group">
+
+                    <label>
+                        الاسم بالكامل
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <input
+                            type="text"
+                            id="customerName"
+                            placeholder="اكتب اسمك"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GOVERNORATE -->
+
+                <div class="input-group">
+
+                    <label>
+                        المحافظة
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <select id="customerGovernorate" required>
+
+                            <option value="">
+                                اختر المحافظة
+                            </option>
+
+                            <option>القاهرة</option>
+                            <option>الجيزة</option>
+                            <option>القليوبية</option>
+                            <option>الإسكندرية</option>
+                            <option>الشرقية</option>
+                            <option>الدقهلية</option>
+                            <option>الغربية</option>
+                            <option>المنوفية</option>
+                            <option>البحيرة</option>
+                            <option>كفر الشيخ</option>
+                            <option>دمياط</option>
+                            <option>بورسعيد</option>
+                            <option>الإسماعيلية</option>
+                            <option>السويس</option>
+                            <option>الفيوم</option>
+                            <option>بني سويف</option>
+                            <option>المنيا</option>
+                            <option>أسيوط</option>
+                            <option>سوهاج</option>
+                            <option>قنا</option>
+                            <option>الأقصر</option>
+                            <option>أسوان</option>
+                            <option>البحر الأحمر</option>
+                            <option>الوادي الجديد</option>
+                            <option>مطروح</option>
+                            <option>شمال سيناء</option>
+                            <option>جنوب سيناء</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AREA -->
+
+                <div class="input-group">
+
+                    <label>
+                        المنطقة
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-map"></i>
+
+                        <input
+                            type="text"
+                            id="customerArea"
+                            placeholder="مثال: مدينة نصر"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="input-group">
+
+                    <label>
+                        رقم الهاتف
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <input
+                            type="tel"
+                            id="customerPhone"
+                            placeholder="01000000000"
+                            inputmode="numeric"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SECOND PHONE -->
+
+                <div class="input-group">
+
+                    <label>
+                        رقم هاتف إضافي
+                        <small>(اختياري)</small>
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-phone-volume"></i>
+
+                        <input
+                            type="tel"
+                            id="customerPhone2"
+                            placeholder="رقم احتياطي"
+                            inputmode="numeric">
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAYMENT -->
+
+                <div class="input-group">
+
+                    <label>
+                        طريقة الدفع
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-wallet"></i>
+
+                        <select id="paymentMethod" required>
+
+                            <option value="">
+                                اختر طريقة الدفع
+                            </option>
+
+                            <option value="الدفع عند الاستلام">
+                                الدفع عند الاستلام
+                            </option>
+
+                            <option value="Vodafone Cash">
+                                Vodafone Cash - 01025922053
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VODAFONE CASH -->
+
+                <div class="vodafone-cash-notice">
+
+                    <div class="vodafone-icon">
+
+                        <i class="fa-solid fa-wallet"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            متاح الدفع عبر فودافون كاش
+                        </strong>
+
+                        <span>
+                            رقم المحفظة:
+                            <b>01025922053</b>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ADDRESS -->
+
+                <div class="input-group">
+
+                    <label>
+                        العنوان بالتفصيل
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-house"></i>
+
+                        <input
+                            type="text"
+                            id="customerAddress"
+                            placeholder="اسم الشارع - رقم العمارة - الدور - الشقة"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORDER PREVIEW -->
+
+                <div class="order-preview">
+
+                    <div>
+
+                        <span>المنتجات</span>
+
+                        <strong id="orderItems">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>الإجمالي</span>
+
+                        <strong id="orderTotal">
+                            0 EGP
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="send-order">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    تأكيد الطلب عبر WhatsApp
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- SUCCESS -->
+
+        <div
+            class="order-success"
+            id="orderSuccess">
+
+            <div class="success-icon">
+
+                <i class="fa-solid fa-check"></i>
+
+            </div>
+
+            <h3>
+                تم إنشاء الطلب 🎉
+            </h3>
+
+            <p>
+                احتفظ بكود الطلب الخاص بك.
+            </p>
+
+
+            <div class="order-code-box">
+
+                <small>
+                    كود الطلب
+                </small>
+
+                <strong id="orderCode">
+                    ZD-000000
+                </strong>
+
+            </div>
+
+
+            <button onclick="closeOrderForm()">
+                إغلاق
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
